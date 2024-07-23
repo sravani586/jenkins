@@ -10,4 +10,8 @@ if [ "$env" == "QA" ]; then
     echo "Performing $env operations with tag $tag"
 else
     echo "Select the correct environment"
+if [ "$tag" == "start" ]; then
+    echo "start app"
+else
+    echo "stop app"
 fi
